@@ -323,11 +323,12 @@ body{
 }
 
 .hero-btn{
-  padding:14px 20px;
+  width: auto;
+  padding:10px 15px;
   background:linear-gradient(90deg,#7b2cff,#00e0ff);
   color:#fff;
   text-decoration:none;
-  font-weight:500;
+  font-weight:300;
   border-radius:30px;
   transition:0.3s;
 }

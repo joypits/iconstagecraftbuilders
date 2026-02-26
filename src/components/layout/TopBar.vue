@@ -7,6 +7,10 @@ export default {
   methods: {
     toggleMenu() {
       this.$emit("toggle-menu")
+    },
+    goToContact() {
+      this.$emit("toggle-menu")
+      this.$router.push({ path: '/', hash: '#contact' })
     }
   }
 }
@@ -20,7 +24,7 @@ export default {
 
     <div class="top-right">
       <!-- Cart -->
-      <a href="/#contact" class="cart-box">
+      <a  href="javascript:void(0)" class="cart-box" @click="goToContact" >
         <span class="cart-price">INQUIRE</span>
       </a>
 

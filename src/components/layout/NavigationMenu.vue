@@ -2,10 +2,10 @@
   <nav class="nav-bar">
     <ul class="nav-menu">
       <li v-for="item in navItems" :key="item.id">
-        <a 
-          :href="'#' + item.id"
+        <a
+          href="javascript:void(0)"
           class="pt-link"
-          @click="$emit('close-menu')"
+          @click="goToSection(item.id)"
         >
           {{ item.label }}
         </a>
@@ -15,6 +15,10 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 const navItems = [
   { label: 'Home', id: 'home' },
   { label: 'About', id: 'about' },
@@ -24,4 +28,8 @@ const navItems = [
   { label: 'Our Team', id: 'team' },
   { label: 'Contact', id: 'contact' }
 ]
+
+const goToSection = (id) => {
+  router.push({ path: '/', hash: `#${id}` })
+}
 </script>

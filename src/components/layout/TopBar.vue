@@ -20,7 +20,7 @@ export default {
 
     <div class="top-right">
       <!-- Cart -->
-      <a href="#contact" class="cart-box">
+      <a href="/#contact" class="cart-box">
         <span class="cart-price">INQUIRE</span>
       </a>
 

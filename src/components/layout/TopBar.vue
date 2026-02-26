@@ -9,7 +9,6 @@ export default {
       this.$emit("toggle-menu")
     },
     goToContact() {
-      this.$emit("toggle-menu")
       this.$router.push({ path: '/', hash: '#contact' })
     }
   }

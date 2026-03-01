@@ -18,7 +18,7 @@ export default {
 <template>
   <div class="top-bar">
     <div class="top-left">
-      Need Help? 📞 Call: +639 123 456 789
+      Need Help? 📞 Call: +639 15 900 3727
     </div>
 
     <div class="top-right">

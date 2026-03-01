@@ -16,9 +16,9 @@
                   <div class="details-content">
                       <h2>{{ equipment.title }}</h2>
 
-                      <div class="price">
+                      <!-- <div class="price">
                       Starting at <span>{{ equipment.price }}</span> / Event
-                      </div>
+                      </div> -->
 
                       <p>{{ equipment.description }}</p>
 
@@ -28,10 +28,10 @@
                       </li>
                       </ul>
 
-                      <a href="#contact" class="inquire-btn">
-                      Inquire Now
+                      <a href="#" @click="goContact()" class="inquire-btn">
+                      Get a Quote
                       </a>
-                      <button class="back-btn" @click="goBack">
+                      <button class="inquire-btn" @click="goBack">
                       ← Back to Equipment
                       </button>
                   </div>
@@ -52,10 +52,11 @@ import { computed } from 'vue'
 
 const equipmentList = [
   {
+    id: 0,
     title: "Line Array Sound System",
     price: "₱8,000",
     image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200",
-    description: "Our Line Array Sound System delivers crystal-clear audio for large events, ensuring every note is heard with precision and power.",   
+    description: "Our Line Array Sound System delivers crystal-clear audio for large events.",
     specs: [
       "🔊 10,000W Total Output Power",
       "🎚️ Digital Mixing Console Included",
@@ -63,17 +64,47 @@ const equipmentList = [
       "⚡ Backup Power Ready",
       "🎛️ Professional Sound Engineer Included"
     ]
+  },
+  {
+    id: 1,
+    title: "Moving Head Lighting",
+    price: "₱5,500",
+    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200",
+    description: "Professional moving head lighting system for dynamic stage effects.",
+    specs: [
+      "💡 RGB LED",
+      "🎛️ DMX Control",
+      "⚡ Energy Efficient"
+    ]
+  },
+  {
+    id: 2,
+    title: "LED Panel Lighting",
+    price: "₱4,000",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200",
+    description: "High-efficiency LED panel lighting for versatile event applications.",
+    specs: [
+      "💡 RGB LED",
+      "🎛️ DMX Control",
+      "⚡ Energy Efficient"
+    ]
   }
 ]
-
 const equipment = computed(() => {
-  return equipmentList[route.params.id]
+  const id = parseInt(route.params.id)
+  return equipmentList.find(item => item.id === id)
 })
-
 function goBack() {
   router.push({
     path: '/',
     hash: '#equipment'
+  })
+}
+
+function goContact() {
+  router.push({
+    path: '/',
+    hash: '#contact'
   })
 }
 </script>

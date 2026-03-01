@@ -24,11 +24,6 @@
 
             <div class="equipment-content">
               <h3>{{ item.title }}</h3>
-
-              <p class="equipment-price">
-                Starting at <span>{{ item.price }}</span> / Event
-              </p>
-
               <div class="equipment-info">
                 <span 
                   v-for="(feature, i) in item.features"
@@ -83,6 +78,7 @@ export default {
 
       equipmentList: [
         {
+          id: 0,
           title: "Line Array Sound System",
           price: "₱8,000",
           image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=900",
@@ -102,6 +98,7 @@ export default {
           ]
         },
         {
+          id: 1,
           title: "Moving Head Lighting",
           price: "₱5,500",
           image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900",
@@ -118,6 +115,7 @@ export default {
           ]
         },
         {
+          id: 2,
           title: "Moving Head Lighting",
           price: "₱5,500",
           image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900",
@@ -137,15 +135,5 @@ export default {
     }
   },
 
-  methods: {
-    openDetails(item) {
-      this.selectedEquipment = item
-      window.scrollTo({ top: 0, behavior: "smooth" })
-    },
-
-    closeDetails() {
-      this.selectedEquipment = null
-    }
-  }
 }
 </script>

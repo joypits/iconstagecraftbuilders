@@ -19,15 +19,15 @@
             <div class="info-item">
               <div class="info-icon">🌍</div>
               <div class="info-text">
-                <h4>Cebu City, Philippines</h4>
-                <p>Talisay Cebu City</p>
+                <h4>Cebu, Philippines</h4>
+                <p>Talisay, Cebu City</p>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon">⏰</div>
               <div class="info-text">
-                <h4>Monday to Friday</h4>
-                <p>9:00am - 6:00pm</p>
+                <h4>Monday to Saturday</h4>
+                <p>8:00am - 10:00pm</p>
               </div>
             </div>
           </div>

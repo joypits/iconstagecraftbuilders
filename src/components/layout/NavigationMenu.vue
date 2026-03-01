@@ -24,6 +24,7 @@ const navItems = [
   { label: 'About', id: 'about' },
   { label: 'Services', id: 'services' },
   { label: 'Equipment', id: 'equipment' },
+  { label: 'Events', id: 'events' },
   { label: 'Clients', id: 'clients' },
   { label: 'Our Team', id: 'team' },
   { label: 'Contact', id: 'contact' }

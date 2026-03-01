@@ -94,17 +94,17 @@ export default {
         {
           icon: "📍",
           title: "Our Location",
-          value: "Talisay, Cebu City, Philippines"
+          value: "Cebu City, Philippines"
         },
         {
           icon: "📞",
           title: "Call Us",
-          value: "+639 15 900 3727"
+          value: "+63 912 345 6789"
         },
         {
           icon: "✉️",
           title: "Email Address",
-          value: "icon_stagecraft@yahoo.com"
+          value: "info@iconstagecraft.com"
         }
       ],
 

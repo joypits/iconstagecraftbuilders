@@ -24,6 +24,11 @@
 
             <div class="equipment-content">
               <h3>{{ item.title }}</h3>
+
+              <p class="equipment-price">
+                Starting at <span>{{ item.price }}</span> / Event
+              </p>
+
               <div class="equipment-info">
                 <span 
                   v-for="(feature, i) in item.features"
@@ -34,7 +39,7 @@
               </div>
 
               <div class="equipment-buttons">
-                <a href="#" @click="goContact()" class="btn-dark">INQUIRE</a>
+                <a href="#contact" class="btn-dark">INQUIRE</a>
 
                 <!-- FIX HERE -->
                <router-link 
@@ -65,12 +70,6 @@
 <script>
 import EquipmentDetails from './EquipmentDetails.vue'
 
-import stageImage10 from '@/assets/images/stagevisual/stage-layout10.jpg'
-import linearray from '@/assets/images/stagevisual/linearray.jpg'
-import digitalmixing from '@/assets/images/stagevisual/digitalmixing.jpg'
-import ledpar from '@/assets/images/stagevisual/ledpar.jpg'
-import ledwall from '@/assets/images/stagevisual/stage-layout2.jpg'
-
 export default {
   name: "EquipmentSection",
   components: { EquipmentDetails },
@@ -84,132 +83,54 @@ export default {
 
       equipmentList: [
         {
-          id: 0,
           title: "Line Array Sound System",
           price: "₱8,000",
-          image: linearray,
+          image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=900",
           description:
-            "Our professional Line Array Sound System delivers powerful, crystal-clear audio coverage for concerts, corporate events, festivals, and church productions. Designed for large venues, it ensures balanced sound distribution from front row to back.",
+            "Our professional line array sound system delivers powerful, crystal-clear audio suitable for concerts, corporate events, festivals, and church productions.",
           specs: [
-            "🔊 30,000W Concert-Grade Output",
-            "🎚️ 48-Channel Digital Mixing Console",
-            "🔉 Dual 21” Subwoofer System",
-            "🎛️ Line Array Configuration (8–12 Cabinets per Side)",
-            "📡 Wireless IEM Monitoring System",
-            "🎤 8+ Wireless Microphones",
-            "👨‍🔧 FOH & Monitor Engineers Included"
+            "🔊 10,000W Total Output Power",
+            "🎚️ Digital Mixing Console Included",
+            "🎤 4 Wireless Microphones",
+            "⚡ Backup Power Ready",
+            "🎛️ Professional Sound Engineer Included"
           ],
           features: [
-            "🔊 30,000W Concert-Grade Output",
-            "🎚️ 48-Channel Digital Mixing Console",
-            "🔉 Dual 21” Subwoofer System",
-            "🎛️ Line Array Configuration (8–12 Cabinets per Side)",
-            "📡 Wireless IEM Monitoring System",
-            "🎤 8+ Wireless Microphones",
-            "👨‍🔧 FOH & Monitor Engineers Included"
+            "🔊 High Power Output",
+            "🎚️ Digital Mixer Ready",
+            "🎤 Wireless Mic Support"
           ]
         },
         {
-          id: 1,
           title: "Moving Head Lighting",
           price: "₱5,500",
           image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900",
-          description: "Our professional moving head lighting system delivers dynamic beams, vibrant color washes, and synchronized effects perfect for concerts, corporate events, weddings, and large-scale productions.",
+          description: "Professional moving head lighting system.",
           specs: [
-            "💡 230W – 350W High-Intensity LED Source",
-            "🌈 Full RGBW Color Mixing System",
-            "🔄 540° Pan / 270° Tilt Movement",
-            "🎚️ DMX512 Control Compatible",
-            "✨ Built-in Gobos & Prism Effects",
-            "⚡ Low Power Consumption, High Output",
-            "🎛️ Sound-Active & Auto Mode"
+            "💡 RGB LED",
+            "🎛️ DMX Control",
+            "⚡ Energy Efficient"
           ],
           features: [
-            "💡 230W – 350W High-Intensity LED Source",
-            "🌈 Full RGBW Color Mixing System",
-            "🔄 540° Pan / 270° Tilt Movement",
-            "🎚️ DMX512 Control Compatible",
-            "✨ Built-in Gobos & Prism Effects",
-            "⚡ Low Power Consumption, High Output",
-            "🎛️ Sound-Active & Auto Mode"
+            "💡 RGB LED",
+            "🎛️ DMX Control",
+            "⚡ Energy Efficient"
           ]
         },
         {
-          id: 2,
-          title: "Stagecraft Builders (Trusses & Stage)",
+          title: "Moving Head Lighting",
           price: "₱5,500",
-          image: stageImage10,
-          description: "Professional stagecraft builders for trusses and stage construction.",
+          image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900",
+          description: "Professional moving head lighting system.",
           specs: [
-            "💡 Stage Setup",
-            "🎛️ Aluminum Truss",
-            "🎛️ Roofing",
-            "⚡ Safety Certified",
-            "🎛️ Structural Rigging"
+            "💡 RGB LED",
+            "🎛️ DMX Control",
+            "⚡ Energy Efficient"
           ],
           features: [
-             "💡 Stage Setup",
-            "🎛️ Aluminum Truss",
-            "🎛️ Roofing",
-            "⚡ Safety Certified",
-            "🎛️ Structural Rigging"
-          ]
-        },
-        {
-          id: 3,
-          title: "Digital Mixing Console",
-          price: "₱5,500",
-          image: digitalmixing,
-          description: "Our Digital Mixing Console provides precise audio control for live events, conferences, weddings, and corporate productions. Equipped with multi-channel inputs, built-in effects, and scene memory, it ensures balanced, high-quality sound for every performance.",
-          specs: [
-            "🎛️ 32-Channel Input",
-            "🎚️ Built-in Effects Processor",
-            "💾 Scene Memory Saving",
-            "📡 Remote Tablet Control"
-          ],
-          features: [
-            "🎛️ 32-Channel Input",
-            "🎚️ Built-in Effects Processor",
-            "💾 Scene Memory Saving",
-            "📡 Remote Tablet Control"
-          ]
-        },
-        {
-          id: 4,
-          title: "LED PAR Lighting",
-          price: "₱5,500",
-          image: ledpar,
-          description: "Our LED PAR Lighting system delivers bright, energy-efficient illumination for events and productions. With a wide range of color options and customizable effects, it enhances any venue's ambiance.",
-          specs: [
-            "💡 RGBW LED Technology",
-            "🎛️ DMX512 Compatible",
-            "⚡ Low Power Consumption",
-            "🎶 Sound Active Mode"
-          ],
-          features: [
-            "💡 RGBW LED Technology",
-            "🎛️ DMX512 Compatible",
-            "⚡ Low Power Consumption",
-            "🎶 Sound Active Mode"
-          ]
-        },
-         {
-          id: 5,
-          title: "LED Wall Display",
-          price: "₱12,000",
-          image: ledwall,
-          description: "Our LED Wall Display system provides high-resolution visual experiences for events and presentations. With customizable content and seamless integration, it creates an immersive environment.",
-          specs: [
-            "📺 P3 / P4 LED Panels",
-            "🔆 High Brightness Output",
-            "📡 HDMI & SDI Compatible",
-            "🖥️ Video Processor Included"
-          ],
-          features: [
-           "📺 P3 / P4 LED Panels",
-          "🔆 High Brightness Output",
-          "📡 HDMI & SDI Compatible",
-          "🖥️ Video Processor Included"
+            "💡 RGB LED",
+            "🎛️ DMX Control",
+            "⚡ Energy Efficient"
           ]
         }
       ]
@@ -217,9 +138,11 @@ export default {
   },
 
   methods: {
-    goContact() {
-      this.$router.push({ hash: '#contact' })
+    openDetails(item) {
+      this.selectedEquipment = item
+      window.scrollTo({ top: 0, behavior: "smooth" })
     },
+
     closeDetails() {
       this.selectedEquipment = null
     }

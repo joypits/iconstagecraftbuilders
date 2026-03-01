@@ -89,9 +89,10 @@ export default {
       company: {
         name: "Icon Stagecraft Builders",
         description:
-          "Professional light and sound rental services in Talisay,Cebu City. Delivering high-quality event production solutions for concerts, weddings, corporate events, and church productions.",
+          "Professional light and sound rental services in Cebu City. Delivering high-quality event production solutions for concerts, weddings, corporate events, and church productions.",
         socials: [
-          { label: "Facebook", link: "https://www.facebook.com/IconSCB" }
+          { label: "Facebook", link: "#" },
+          { label: "LinkedIn", link: "#" }
         ]
       },
 
@@ -113,9 +114,9 @@ export default {
       ],
 
       contactInfo: [
-        "📍 Talisay, Cebu City, Philippines",
-        "📞 +639 15 900 3727",
-        "✉️ icon_stagecraft@yahoo.com"
+        "📍 Cebu City, Philippines",
+        "📞 +63 912 345 6789",
+        "✉️ info@iconstagecraft.com"
       ]
     }
   }

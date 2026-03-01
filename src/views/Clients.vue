@@ -35,27 +35,27 @@ const slider = ref(null)
 const position = ref(0)
 const speed = 0.5
 
-const cebulandmasters = new URL('@/assets/images/clients/cebu-land-masters.jpg', import.meta.url).href
-const lgucebu = new URL('@/assets/images/clients/lgu-cebu.png', import.meta.url).href
-const ayalacebu = new URL('@/assets/images/clients/ayalacebu.png', import.meta.url).href
-const ironkids = new URL('@/assets/images/clients/ironkids.jpg', import.meta.url).href
+const usc = new URL('@/assets/images/clients/usc.jpg', import.meta.url).href
+const sm = new URL('@/assets/images/clients/sm.png', import.meta.url).href
+const coca = new URL('@/assets/images/clients/coke.png', import.meta.url).href
+const globe = new URL('@/assets/images/clients/globe.jpg', import.meta.url).href
 
 const clients = [
   {
-    name: "Cebu Landmasters",
-    logo: cebulandmasters
+    name: "University of San Carlos",
+    logo: usc
   },
   {
-    name: "City Government of Cebu",
-    logo: lgucebu
+    name: "SM Corporate",
+    logo: sm
   },
   {
-    name: "Ayala Cebu Center",
-    logo: ayalacebu
+    name: "Coca-Cola PH",
+    logo: coca
   },
   {
-    name: "Ironkids Philippines",
-    logo: ironkids
+    name: "Globe Telecom",
+    logo: globe
   }
 ]
 

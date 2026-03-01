@@ -46,23 +46,13 @@ export default {
 
       teamMembers: [
         {
-          name: "Giovanni Caspe",
-          role: "Founder & CEO",
+          name: "Dee Jay Caspe",
+          role: "Technical Director",
           image: image1
         },
         {
           name: "Dee Jay Caspe",
-          role: "Operations Manager",
-          image: image1
-        },
-        {
-          name: "Dee Jay Caspe",
-          role: "Lighting Director",
-          image: image1
-        },
-        {
-          name: "Dee Jay Caspe",
-          role: "Lighting Technician",
+          role: "Lighting Designer",
           image: image1
         },
         {
@@ -72,17 +62,12 @@ export default {
         },
         {
           name: "Dee Jay Caspe",
-          role: "Sound Engineer",
-          image: image1
-        },
-        {
-          name: "Dee Jay Caspe",
           role: "Event Coordinator",
           image: image1
         },
         {
           name: "Joy Faith Prieto",
-          role: "Technical Crew",
+          role: "Janitorial Services",
           image: image2
         }
       ]

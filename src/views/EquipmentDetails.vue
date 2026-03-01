@@ -31,7 +31,7 @@
                       <a href="#contact" class="inquire-btn">
                       Inquire Now
                       </a>
-                      <button class="back-btn" @click="goBack">
+                      <a href="#" class="inquire-btn" @click="goBack">
                       ← Back to Equipment
                       </button>
                   </div>

@@ -118,7 +118,8 @@ export default {
           ]
         },
         {
-          title: "Moving Head Lighting",
+          id: 2,
+          title: "Stagecraft Builders (Trusses & Stage)",
           price: "₱5,500",
           image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=900",
           description: "Professional moving head lighting system.",

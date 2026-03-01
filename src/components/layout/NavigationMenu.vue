@@ -30,6 +30,6 @@ const navItems = [
 ]
 
 const goToSection = (id) => {
-  router.push({ path: '/', hash: `#${id}` })
+  router.push({ hash: `#${id}` })
 }
 </script>

@@ -35,9 +35,9 @@ const slider = ref(null)
 const position = ref(0)
 const speed = 0.5
 
-const ayalacebu = new URL('@/assets/images/clients/ayalacebu.jpg', import.meta.url).href
+const ayalacebu = new URL('@/assets/images/clients/ayalacebu.png', import.meta.url).href
 const cebulandmasters = new URL('@/assets/images/clients/cebu-land-masters.jpg', import.meta.url).href
-const lgucebu = new URL('@/assets/images/clients/lgu-cebu.jpg', import.meta.url).href
+const lgucebu = new URL('@/assets/images/clients/lgu-cebu.png', import.meta.url).href
 const ironkids = new URL('@/assets/images/clients/ironkids.jpg', import.meta.url).href
 
 const clients = [

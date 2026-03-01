@@ -20,14 +20,14 @@
               <div class="info-icon">🌍</div>
               <div class="info-text">
                 <h4>Cebu City, Philippines</h4>
-                <p>Talisay Cebu City</p>
+                <p>Zone 3 Ilang-Ilang, Talisay, 6045 Cebu</p>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon">⏰</div>
               <div class="info-text">
-                <h4>Monday to Friday</h4>
-                <p>9:00am - 6:00pm</p>
+                <h4>Monday to Saturday</h4>
+                <p>9:00am - 7:00pm</p>
               </div>
             </div>
           </div>

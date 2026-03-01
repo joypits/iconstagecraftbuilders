@@ -33,7 +33,7 @@
                       </a>
                       <a href="#" class="inquire-btn" @click="goBack">
                       ← Back to Equipment
-                      </button>
+                      </a>
                   </div>
               </div>
             </div>

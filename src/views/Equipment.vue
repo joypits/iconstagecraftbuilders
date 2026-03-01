@@ -88,8 +88,7 @@ export default {
           title: "Line Array Sound System",
           price: "₱8,000",
           image: linearray,
-          description:
-            "Our professional Line Array Sound System delivers powerful, crystal-clear audio coverage for concerts, corporate events, festivals, and church productions. Designed for large venues, it ensures balanced sound distribution from front row to back.",
+          description:"Our professional Line Array Sound System delivers powerful, crystal-clear audio coverage for concerts, corporate events, festivals, and church productions. Designed for large venues, it ensures balanced sound distribution from front row to back.",
           specs: [
             "🔊 30,000W Concert-Grade Output",
             "🎚️ 48-Channel Digital Mixing Console",
@@ -193,7 +192,7 @@ export default {
             "🎶 Sound Active Mode"
           ]
         },
-         {
+        {
           id: 5,
           title: "LED Wall Display",
           price: "₱12,000",
